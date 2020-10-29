@@ -1,0 +1,19 @@
+.advantages
+    min-height: 590px
+    padding: 57px 0 73px 0
+    &__wrapper
+        margin-top: 30px
+        display: grid
+        grid-template: repeat(4, minmax(62px, auto)) / repeat(2, 508px)
+        grid-auto-row: minmax(62px, auto)
+        justify-content: space-between
+        row-gap: 36px
+    &__item
+        display: flex
+        &-img
+            margin-right: 17px
+        &-descr
+            p
+                margin: 0
+                font-weight: 300
+                color: $descr-color
