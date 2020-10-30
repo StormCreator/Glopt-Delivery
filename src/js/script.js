@@ -1,10 +1,9 @@
-import menu from './modules/menu';
-import skills from './modules/skills';
+import work from './modules/work';
+
 
 window.addEventListener('DOMContentLoaded', function() {
     
-    menu('.hamburger', '.menu', '.menu__close', 'active');
-    skills('.stack__skill-precent', '.stack__skill-divider');
+    work('.price__item-visible', '.price__item-hidden', '.price__item-more', '.price__item-back', 'hide');
 });
 
 
