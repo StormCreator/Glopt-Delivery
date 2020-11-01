@@ -42,6 +42,15 @@
         &__wrapper
             grid-template-columns: repeat(3,1fr)
             row-gap: 20px
+    .scheme
+        &__wrapper
+            justify-content: space-between
+        &__item
+            width: 30%
+    .slick-prev
+        left: 37%
+    .slick-next
+        right: 37%
 
 
     
@@ -89,8 +98,14 @@
                 margin-bottom: 15px
                 &:last-child
                     margin-bottom: 0
-
-
+    .scheme
+        &__item
+            width: 45%
+    .slick-prev
+        left: 30%
+    .slick-next
+        right: 30%
+   
 
 
 @media (max-width: 576px)
@@ -125,3 +140,19 @@
         &__form
             input
                 width: 90%
+    .scheme
+        &__wrapper
+            justify-content: center
+        &__item
+            width: 90%
+    .testimonials
+        &__subtitle
+            font-size: 14px
+        &__slide
+            p
+                font-size: 14px
+    .slick-prev
+        left: 10%
+    .slick-next
+        right: 10%
+
