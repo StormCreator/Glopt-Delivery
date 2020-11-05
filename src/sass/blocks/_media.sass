@@ -15,6 +15,10 @@
     .work
         &__wrapper
             grid-template-columns: repeat(3, 300px)
+    .contacts
+        display: none
+    .header
+        justify-content: space-around
 
 
 @media (max-width: 992px)
@@ -75,8 +79,17 @@
         &_fs26
             font-size: 21px
     .header
-        &__nav
-            display: none
+        justify-content: space-between
+        &__menu
+            position: fixed
+            right: -100%
+            top: 0
+            transition: .3s all
+            &-close
+                display: block
+    .header__nav ul li span
+        display: none
+        margin-right: 0
     .promo
         &__descr
             font-size: 16px
@@ -125,6 +138,8 @@
         &__logo
             span
                 font-size: 14px
+    .hamburger
+        display: flex
 
 
 @media (max-width: 576px)
