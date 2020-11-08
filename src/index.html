@@ -70,7 +70,7 @@
                             <span>Есть вопросы?</span><br>
                             <a href="tel:+79264230100">+7 (926) 423 01 00</a>
                         </div>
-                        <button class="btn">Перезвоните мне</button>
+                        <button class="btn callBtn">Перезвоните мне</button>
                     </div>
                     <div class="hamburger">
                         <span></span>
@@ -522,7 +522,7 @@
                                     <span>Есть вопросы?</span><br>
                                     <a href="tel:+79264230100">+7 (926) 423 01 00</a>
                                 </div>
-                                <button class="btn">Перезвоните мне</button>
+                                <button class="btn callBtn">Перезвоните мне</button>
                             </div>
                         </div>
                     </div>
@@ -539,6 +539,22 @@
                 </div>
             </div>
         </footer>
+
+
+        <div class="modal" id="call-modal">
+            <div class="modal__wrapper">
+                <div class="modal__close">
+                    &times;
+                </div>
+                <div class="modal__title">
+                    <span>Перезвоните мне!</span>
+                </div>
+                <form action="#">
+                    <input type="tel" name="phone" placeholder="Ваш номер телефона...">
+                    <button class="btn">Отправить</button>
+                </form>
+            </div>
+        </div>
     </main>
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
