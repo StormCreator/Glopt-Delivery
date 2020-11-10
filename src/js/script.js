@@ -2,6 +2,7 @@ import work from './modules/work';
 import slider from './modules/slider';
 import hamburger from './modules/hamburger';
 import modalInit from './modules/modal';
+import scrolling from './modules/scrolling';
 
 
 window.addEventListener('DOMContentLoaded', function() {
@@ -10,6 +11,7 @@ window.addEventListener('DOMContentLoaded', function() {
     slider();
     hamburger();
     modalInit();
+    scrolling();
     
 });
 
