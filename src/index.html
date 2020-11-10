@@ -363,7 +363,7 @@
                     <input type="text" name="name" placeholder="Ваше имя" required>
                     <input type="tel" name="phone" placeholder="Ваш номер телефона" required>
                     <input type="email" name="email" placeholder="Ваш e-mail" required>
-                    <button type="submit" class="btn">Отправить заявку</button>
+                    <button type="submit" class="btn" id="btn-submit">Отправить заявку</button>
                 </form>
             </div>
         </section>
@@ -491,11 +491,11 @@
                             </span>
                         </div>
                         <div class="questions__form-wrapper">
-                            <input type="text" name="name" placeholder="Ваше имя...">
-                            <input type="tel" name="phone" placeholder="Ваш номер телефона...">
-                            <input type="email" name="email" placeholder="Ваш e-mail...">
+                            <input type="text" name="name" placeholder="Ваше имя..." required>
+                            <input type="tel" name="phone" placeholder="Ваш номер телефона..." required>
+                            <input type="email" name="email" placeholder="Ваш e-mail..." required>
                             <textarea name="message" placeholder="Сообщение..."></textarea>
-                            <button type="submit" class="btn btn-medium">Отправить заявку</button>
+                            <button type="submit" class="btn btn-medium" id="btn-submit">Отправить заявку</button>
                         </div>
                     </form>
                 </div>
@@ -551,7 +551,33 @@
                 </div>
                 <form action="#">
                     <input type="tel" name="phone" placeholder="Ваш номер телефона...">
-                    <button class="btn">Отправить</button>
+                    <button class="btn" id="btn-submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="modal modal-thanks" id="thanks-modal">
+            <div class="modal__wrapper">
+                <div class="modal__close">
+                    &times;
+                </div>
+                <span class="modal__text">
+                    Спасибо, с Вами свяжуться в течении 10 минут!
+                </span>
+            </div>
+        </div>
+
+        <div class="modal modal-order" id="order-modal">
+            <div class="modal__wrapper">
+                <div class="modal__close">
+                    &times;
+                </div>
+                <div class="modal__title">
+                    <span>Получить расчёт</span>
+                </div>
+                <form action="#">
+                    <input type="email" name="email" placeholder="Ваш e-mail...">
+                    <button class="btn" id="btn-submit">Отправить</button>
                 </form>
             </div>
         </div>

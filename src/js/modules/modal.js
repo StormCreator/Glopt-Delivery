@@ -2,7 +2,11 @@ function modalInit(callBtnsSelector){
     const overlay = document.querySelector('.overlay'),
             close = document.querySelectorAll('.modal__close'),
             callBtns = document.querySelectorAll('.callBtn'),
-            callModal = document.getElementById('call-modal');
+            callModal = document.getElementById('call-modal'),
+            thanksModal = document.getElementById('thanks-modal'),
+            btnsSubmit = document.querySelectorAll('#btn-submit'),
+            btnOrder = document.querySelector('.promo__button'),
+            orderModal = document.getElementById('order-modal');
 
             
 
@@ -17,6 +21,21 @@ function modalInit(callBtnsSelector){
             openModal(callModal, overlay);
         });
     });
+
+    btnsSubmit.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            setTimeout(() => {
+                closeModal(overlay);
+                openModal(thanksModal, overlay);
+            }, 1000);
+        });
+    });
+
+    btnOrder.addEventListener('click', (e) => {
+        e.preventDefault();
+        openModal(orderModal, overlay);
+    })
 }
 
 function openModal(modal, overlay){
