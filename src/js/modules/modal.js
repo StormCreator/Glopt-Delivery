@@ -6,8 +6,7 @@ function modalInit(callBtnsSelector){
             thanksModal = document.getElementById('thanks-modal'),
             btnsSubmit = document.querySelectorAll('#btn-submit'),
             btnOrder = document.querySelector('.promo__button'),
-            orderModal = document.getElementById('order-modal'),
-            navLinks = document.querySelectorAll('.header__link');
+            orderModal = document.getElementById('order-modal');
 
             
 
@@ -38,13 +37,7 @@ function modalInit(callBtnsSelector){
         openModal(orderModal, overlay);
     });
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if(overlay.style.left != "0"){
-                closeModal(overlay);
-            }
-        });
-    });
+ 
 }
 
 function openModal(modal, overlay){
