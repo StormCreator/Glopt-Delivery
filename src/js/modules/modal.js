@@ -29,6 +29,7 @@ function modalInit(callBtnsSelector){
                 closeModal(overlay);
                 openModal(thanksModal, overlay);
             }, 1000);
+            $('form').trigger('reset');
         });
     });
 
